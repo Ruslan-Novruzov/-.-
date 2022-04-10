@@ -52,7 +52,11 @@ body {
 
 .top__info {
     background-color: #F1E4E6;
-    display: flex;
+}
+
+.top__content {
+    width: 1140px;
+    margin: 0 auto;
 }
 
 .content_left {
@@ -66,7 +70,7 @@ body {
 
 .content_right {
     display: grid;
-    margin-left: -91px;
+    margin-left: 205px;
     justify-content: center;
     align-items: center;
     align-content: center;
