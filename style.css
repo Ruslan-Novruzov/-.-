@@ -18,6 +18,7 @@ body {
 }
 
 .header {
+    position: relative;
     width: 1140px;
     margin: 0 auto;
     height: 75px;
@@ -60,30 +61,6 @@ body {
     display: flex;
 }
 
-.content_left {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-.content_right {
-    display: grid;
-    margin-left: 205px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    list-style-type: none;
-}
-
-.top__content_text {
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 58px;
-    color: #222222;
-}
-
 .fashion {
     color: rgb(229, 93, 48);
 
@@ -108,4 +85,46 @@ body {
 .promo__list_bottom {
     list-style-type: none;
     margin-bottom: 96px;
+}
+
+.menu-box {
+    top: 70px;
+    background-color: #fff;
+    position: absolute;
+    border: 1px solid #fff;
+    width: 232px;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-heading {
+    padding-top: 37px;
+    padding-left: 34px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.menu-heading {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    padding-left: 33px;
+}
+
+.menu-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    text-decoration: none;
+    padding: 11px;
+    padding-left: 54px;
 }
