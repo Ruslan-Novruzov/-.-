@@ -49,6 +49,7 @@ body {
     align-content: center;
     margin-right: 40px;
     list-style-type: none;
+    padding: 20px 26px;
 }
 
 .top__info {
@@ -88,11 +89,31 @@ body {
 }
 
 .menu-box {
-    top: 70px;
+    top: 67px;
     background-color: #fff;
     position: absolute;
     border: 1px solid #fff;
     width: 232px;
+    display: none;
+}
+
+.menu-box::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    position: absolute;
+    top: -7px;
+    left: 110px;
+    transform: rotate(45deg);
+    border-top: #8e8e8e;
+    border-left: #8e8e8e;
+}
+
+.menu-list:hover .menu-box {
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-items {
