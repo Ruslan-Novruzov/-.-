@@ -85,7 +85,7 @@ body {
     position: relative;
 }
 
-.promo__item_bottom {
+.promo__list_bottom {
     list-style-type: none;
     margin-bottom: 96px;
     position: relative;
@@ -104,6 +104,9 @@ body {
 
 .item-text-bottom {
     position: absolute;
+    top: 65px;
+    left: 480px;
+    color: #fff;
 }
 
 .text {
