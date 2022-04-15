@@ -195,6 +195,11 @@ body {
     margin-bottom: 48px;
 }
 
+.content-right {
+    border-left: 12px solid red;
+    height: 61px;
+}
+
 
 .footer__top {
     background-color: #222224;
@@ -235,6 +240,7 @@ body {
     background-image: url(img/photosubscribe.png);
     height: 448px;
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .footer__bottom_info {
