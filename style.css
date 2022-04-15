@@ -240,7 +240,8 @@ body {
     background-image: url(img/photosubscribe.png);
     height: 448px;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: bottom;
 }
 
 .footer__bottom_info {
