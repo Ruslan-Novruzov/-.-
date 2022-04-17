@@ -189,6 +189,17 @@ ul.breadcrumb li {
     width: 640px;
 }
 
+.article_link {
+    text-decoration: none;
+    padding-left: 42px;
+    padding-top: 65px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+
+}
+
 .content {
     display: flex;
 }
