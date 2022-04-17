@@ -28,13 +28,11 @@ body {
 
 .header__left {
     display: flex;
-    justify-content: start;
     list-style-type: none;
 }
 
 .header__right {
     display: flex;
-    justify-content: start;
     list-style-type: none;
 }
 
@@ -54,6 +52,35 @@ body {
 .top__info {
     background-color: #F1E4E6;
 }
+
+.top__nav {
+    background-color: #F8F3F4;
+    height: 148px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top__link {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li::before {
+    content: "/";
+}
+
+
+.breadcrumb-item {
+    color: red;
+}
+
 
 .content {
     display: flex;
@@ -265,6 +292,11 @@ body {
     top: 185px;
     justify-content: center;
     width: 100%;
+    pointer-events: none;
+}
+
+.buy__link:hover {
+    box-shadow: 0 0 20px #fff;
 }
 
 .card__item:hover .buy {
@@ -278,6 +310,7 @@ body {
     border: 1px solid #fff;
     padding: 9px;
     align-items: center;
+    pointer-events: all;
 }
 
 .buy__text {
