@@ -211,16 +211,74 @@ ul.breadcrumb li {
 
 }
 
-.summary {
+.accardion {
     display: flex;
-    padding: 65px;
+    margin-top: 65px;
 }
 
-details::after {
-    content: icon;
+summary {
+    display: block;
+    padding-right: 23px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.sum {
+    display: flex;
+    align-items: center;
+}
+
+.sum_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
 }
 
 
+summary::after {
+    content: "";
+    display: inline-block;
+    background-image: url(img/summary.png);
+    width: 11px;
+    height: 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 9px;
+}
+
+/* details[open]>summary::after {
+    content: '\25BC';
+} */
+
+.add_to_Card {
+    margin-top: 49px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.link_button {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    padding-left: 23px;
+    border: 1px solid #FF6A6A;
+    width: 211px;
+    height: 47px;
+}
+
+.select_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 
 
@@ -371,6 +429,14 @@ details::after {
 }
 
 .item__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.card__item {
     width: 360px;
     margin-bottom: 30px;
 }
