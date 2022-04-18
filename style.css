@@ -109,7 +109,18 @@ ul.breadcrumb li {
     border: 0.5px solid #E5E5E5;
 }
 
-.swipe {
+.swipe_left {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    border: none;
+    background-color: rgba(42, 42, 42, 0.15);
+    width: 47px;
+    height: 47px;
+}
+
+.swipe_left {
     position: relative;
     display: flex;
     align-items: center;
@@ -199,6 +210,19 @@ ul.breadcrumb li {
     color: #6F6E6E;
 
 }
+
+.summary {
+    display: flex;
+    padding: 65px;
+}
+
+details::after {
+    content: icon;
+}
+
+
+
+
 
 .content {
     display: flex;
