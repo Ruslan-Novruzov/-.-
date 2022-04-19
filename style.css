@@ -528,6 +528,19 @@ summary::after {
     padding-left: 11px;
 }
 
+.card-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 95px;
+}
+
+.browse_link {
+    border: 1px solid #FF6A6A;
+    color: #F26376;
+    text-decoration: none;
+    padding: 15px 38px;
+}
+
 
 .footer__top {
     background-color: #222224;
