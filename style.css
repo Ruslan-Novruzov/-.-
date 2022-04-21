@@ -295,7 +295,81 @@ summary::after {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 65px;
 }
+
+.navig {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right__navig {
+    display: flex;
+    align-items: center;
+}
+
+.menu_link {
+    background-color: #ffffff;
+    padding-left: 34px;
+
+}
+
+.cat_img {
+    padding-left: 11px;
+}
+
+.catalog_menu_heading {
+    padding-top: 13px;
+    padding-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.link_list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.links {
+    text-decoration: none;
+    color: #6F6E6E;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 10px;
+}
+
+.link-text {
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 12px;
+    width: 327px;
+
+}
+
+.Brand {
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 12px;
+    width: 327px;
+    padding-top: 32px;
+    color: #6F6E6E;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+}
+
+.designer {
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 12px;
+    width: 327px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    margin-top: 26px;
+}
+
 
 .content {
     display: flex;
