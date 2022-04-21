@@ -306,6 +306,22 @@ summary::after {
 .right__navig {
     display: flex;
     align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.accardion_list {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.checkbox {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6F6E6E;
 }
 
 .menu_link {
