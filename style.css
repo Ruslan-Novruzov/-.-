@@ -286,6 +286,17 @@ summary::after {
     align-items: center;
 }
 
+.gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .content {
     display: flex;
 }
@@ -544,9 +555,6 @@ summary::after {
     text-decoration: none;
     padding: 15px 38px;
 }
-
-
-
 
 .footer__top {
     background-color: #222224;
