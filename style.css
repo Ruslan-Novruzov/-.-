@@ -324,6 +324,10 @@ summary::after {
     color: #6F6E6E;
 }
 
+.lable {
+    padding-left: 9px;
+}
+
 .menu_link {
     background-color: #ffffff;
     padding-left: 34px;
