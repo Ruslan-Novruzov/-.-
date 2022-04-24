@@ -317,6 +317,11 @@ summary::after {
     list-style-type: none;
 }
 
+.FILTER:hover .catalog_menu_box {
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 

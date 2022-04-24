@@ -398,6 +398,16 @@ summary::after {
   list-style-type: none;
 }
 
+.FILTER:hover .catalog_menu_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .navig {
   display: -webkit-box;
   display: -ms-flexbox;
