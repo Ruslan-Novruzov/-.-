@@ -343,6 +343,61 @@ summary::after {
   margin-top: 65px;
 }
 
+.FILTER {
+  width: 360px;
+}
+
+.catalog_menu_box {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 34px;
+}
+
+.catalog_menu_list {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  padding-bottom: 11px;
+}
+
+.catalog_menu_mini-heading {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  padding-bottom: 12px;
+  padding-top: 26px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.brand__box {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.catalog__list:hover .brand__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.catalog__list {
+  list-style-type: none;
+}
+
 .navig {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,9 +411,6 @@ summary::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 
 .accardion_list {
@@ -407,7 +459,7 @@ summary::after {
 }
 
 .catalog_menu_nav {
-  width: 100%;
+  width: 62%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,6 +580,7 @@ summary::-webkit-details-marker {
   border: 1px solid #fff;
   width: 232px;
   display: none;
+  z-index: 1;
 }
 
 .menu-box::before {
@@ -936,7 +989,6 @@ summary::-webkit-details-marker {
 }
 
 .social_link {
-  border: 1px solid #fff;
   width: 32px;
   height: 32px;
   background-color: #ffffff;
@@ -958,10 +1010,14 @@ summary::-webkit-details-marker {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 15%;
+  width: 13%;
 }
 
-.social_link_box:hover .facebook {
+.social_link:hover {
   background-color: red;
+}
+
+.social_link:hover .social_img {
+  color: #fff;
 }
 /*# sourceMappingURL=Style.css.map */
