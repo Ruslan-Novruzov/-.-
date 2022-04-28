@@ -7,7 +7,7 @@
 $site-width:1140px;
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
 }
 
 .container {
@@ -274,12 +274,19 @@ summary::after {
 
 .FILTER {
     width: 360px;
+    padding-left: 16px;
+}
+
+.FILTER:hover {
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
 
 .catalog_menu_box {
     display: none;
     flex-direction: column;
     padding-left: 34px;
+
 }
 
 .catalog_menu_list {
@@ -300,11 +307,14 @@ summary::after {
     padding-top: 26px;
     margin-bottom: 24px;
     border-bottom: 1px solid #EBEBEB;
+    width: 235px;
+    padding-left: 11px;
 }
 
 .brand__box {
     display: none;
     flex-direction: column;
+    padding-bottom: 32px;
 }
 
 .catalog__list:hover .brand__box {
@@ -312,14 +322,23 @@ summary::after {
     flex-direction: column;
 }
 
+.catalog_menu_heading:hover {
+    color: red;
+}
+
 
 .catalog__list {
     list-style-type: none;
+
 }
 
 .FILTER:hover .catalog_menu_box {
     display: flex;
     flex-direction: column;
+}
+
+.catalog_menu_mini-heading:hover {
+    color: red;
 }
 
 
@@ -850,3 +869,5 @@ summary::-webkit-details-marker {
 .social_link:hover .social_img {
     color: #fff;
 }
+
+@import "Registration"

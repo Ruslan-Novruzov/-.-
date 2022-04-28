@@ -1,0 +1,45 @@
+.registration__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 96px;
+}
+
+.registration__heading {
+    line-height: 19px;
+    padding-top: 64px;
+    padding-bottom: 20px;
+}
+
+.registration__info {
+    padding: 15px;
+    width: 360px;
+    margin-bottom: 20px;
+}
+
+.gender__selection {
+    padding-left: 10px;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+}
+
+.gender__select_input {
+    margin-top: 32px;
+    margin-left: 20px;
+}
+
+.login__text {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.registration__text {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}

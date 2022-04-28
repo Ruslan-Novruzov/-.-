@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato';
 }
 
 .container {
@@ -345,6 +345,13 @@ summary::after {
 
 .FILTER {
   width: 360px;
+  padding-left: 16px;
+}
+
+.FILTER:hover {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
 
 .catalog_menu_box {
@@ -374,6 +381,8 @@ summary::after {
   padding-top: 26px;
   margin-bottom: 24px;
   border-bottom: 1px solid #EBEBEB;
+  width: 235px;
+  padding-left: 11px;
 }
 
 .brand__box {
@@ -382,6 +391,7 @@ summary::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 32px;
 }
 
 .catalog__list:hover .brand__box {
@@ -392,6 +402,10 @@ summary::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.catalog_menu_heading:hover {
+  color: red;
 }
 
 .catalog__list {
@@ -406,6 +420,10 @@ summary::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.catalog_menu_mini-heading:hover {
+  color: red;
 }
 
 .navig {
@@ -1029,5 +1047,57 @@ summary::-webkit-details-marker {
 
 .social_link:hover .social_img {
   color: #fff;
+}
+
+.registration__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 96px;
+}
+
+.registration__heading {
+  line-height: 19px;
+  padding-top: 64px;
+  padding-bottom: 20px;
+}
+
+.registration__info {
+  padding: 15px;
+  width: 360px;
+  margin-bottom: 20px;
+}
+
+.gender__selection {
+  padding-left: 10px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.gender__select_input {
+  margin-top: 32px;
+  margin-left: 20px;
+}
+
+.login__text {
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+.registration__text {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
 }
 /*# sourceMappingURL=Style.css.map */
