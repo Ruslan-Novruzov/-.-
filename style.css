@@ -1053,12 +1053,6 @@ summary::-webkit-details-marker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 96px;
 }
 
@@ -1083,7 +1077,10 @@ summary::-webkit-details-marker {
 }
 
 .gender__select_input {
-  margin-top: 32px;
+  margin-top: 25px;
+}
+
+.gender__select_input-f {
   margin-left: 20px;
 }
 
@@ -1099,5 +1096,52 @@ summary::-webkit-details-marker {
   font-size: 13px;
   line-height: 16px;
   color: #B1B1B1;
+}
+
+.form__link {
+  background-color: #F16D7F;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 16px 35px;
+}
+
+.link__img {
+  padding-left: 20px;
+}
+
+.registration__article {
+  margin-top: 64px;
+  margin-left: 130px;
+}
+
+.heading_reg {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 22px;
+}
+
+.reg__txt {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  padding-bottom: 21px;
+}
+
+.li__list {
+  padding-bottom: 16px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  list-style-type: none;
+  list-style-image: url(img/galochka.png);
+  padding-left: 22px;
+  margin-left: 32px;
 }
 /*# sourceMappingURL=Style.css.map */
