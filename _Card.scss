@@ -145,7 +145,6 @@
 
 .proceed_button {
     align-self: center;
-    margin-top: 39px;
     padding: 16px 44px;
     color: #ffffff;
     background-color: #F16D7F;
@@ -172,4 +171,15 @@
 .grand_total {
     color: red;
     padding-left: 20px;
+}
+
+.border {
+    border: 1px solid #E5E5E5;
+    width: 252px;
+    display: flex;
+    align-self: center;
+    margin-top: 21px;
+    margin-bottom: 17px;
+
+
 }
