@@ -918,6 +918,10 @@ summary::-webkit-details-marker {
   color: #E5E5E5;
 }
 
+.pagination_number:hover {
+  color: black;
+}
+
 .footer__top {
   background-color: #222224;
   height: 341px;
@@ -1319,5 +1323,63 @@ summary::-webkit-details-marker {
 .checkout_box {
   width: 360;
   background-color: #F5F3F3;
+  margin-top: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.checkout_text_top {
+  padding-top: 39px;
+  padding-bottom: 12px;
+  padding-right: 34px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+}
+
+.checkout_text_middle {
+  padding-right: 34px;
+}
+
+.proceed_button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 39px;
+  padding: 16px 44px;
+  color: #ffffff;
+  background-color: #F16D7F;
+  border: none;
+  margin-bottom: 42px;
+}
+
+.proceed_button:hover {
+  color: red;
+  background-color: #ffffff;
+}
+
+.checkout_span {
+  padding-left: 25px;
+}
+
+.checkout_text_middle {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.grand_total {
+  color: red;
+  padding-left: 20px;
 }
 /*# sourceMappingURL=Style.css.map */
