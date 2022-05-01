@@ -78,6 +78,11 @@ ul.breadcrumb li {
     text-decoration: none;
 }
 
+.breadcrumb__link:hover {
+    color: #F16D7F;
+
+}
+
 .right_link {
     text-decoration: none;
     font-weight: 400;
@@ -231,6 +236,16 @@ summary::after {
     justify-content: center;
 }
 
+.add_to_card_link:hover {
+    background-color: #FF6A6A;
+    color: #ffffff;
+}
+
+.add_img:hover {
+    background-color: #FF6A6A;
+    color: #ffffff;
+}
+
 .add_img {
     padding-right: 22px;
 }
@@ -296,6 +311,11 @@ summary::after {
     line-height: 17px;
     color: #6F6E6E;
     padding-bottom: 11px;
+}
+
+.catalog_menu_list:hover {
+    color:
+        #EF5B70;
 }
 
 .catalog_menu_mini-heading {
@@ -538,7 +558,6 @@ summary::-webkit-details-marker {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #F16D7F;
     padding-top: 20px;
     padding-bottom: 12px;
     padding-left: 33px;
@@ -552,6 +571,10 @@ summary::-webkit-details-marker {
     text-decoration: none;
     padding: 9px;
     padding-left: 54px;
+}
+
+.menu-link:hover {
+    color: red;
 }
 
 .content__heading {
@@ -682,6 +705,13 @@ summary::-webkit-details-marker {
     display: flex;
     justify-content: center;
     margin-bottom: 95px;
+}
+
+.browse_link:hover {
+    background-color: #F16D7F;
+    color: #FFFFFF;
+    box-shadow: 4px 2px 18px -1px cadetblue;
+    ;
 }
 
 .browse_link {
@@ -827,6 +857,11 @@ summary::-webkit-details-marker {
     border: none;
 }
 
+.button:hover {
+    color: red;
+    background-color: #FFFFFF;
+}
+
 .copyright {
     background-color: #222224;
     height: 79px;
@@ -870,4 +905,6 @@ summary::-webkit-details-marker {
     color: #fff;
 }
 
-@import "Registration"
+@import "Registration";
+
+@import "Card";

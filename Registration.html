@@ -78,23 +78,23 @@
     <div class="container registration__form">
         <form action="#">
             <p class="registration__heading">Your Name</p> <br>
-            <input class="registration__info" type="text" placeholder="First Name"> <br>
-            <input class="registration__info" type="text" placeholder="Last Name"> <br>
+            <input class="registration__info" type="text" placeholder="First Name" required> <br>
+            <input class="registration__info" type="text" placeholder="Last Name" required> <br>
 
-            <input class="gender__select_input" type="radio" name="gender" id="Male">
+            <input class="gender__select_input" type="radio" name="gender" id="Male" required>
             <label class="gender__selection" for="Male"> Male</label>
-            <input class="gender__select_input-f" type="radio" name="gender" id="Female">
+            <input class="gender__select_input-f" type="radio" name="gender" id="Female" required>
             <label class="gender__selection" for="Female"> Female</label> <br>
 
             <p class="login__text">Login details</p> <br>
 
-            <input class="registration__info" type="text" placeholder="Email"> <br>
-            <input class="registration__info" type="text" placeholder="Password">
+            <input class="registration__info" type="email" placeholder="Email"> <br>
+            <input class="registration__info" type="password" placeholder="Password">
 
             <p class="registration__text">Please use 8 or more characters, with at least 1 number and a mixture of
                 uppercase and lowercase letters
             </p>
-            <a class="form__link" href="#">JOIN NOW <img class="link__img" src="img/strelka.png" alt="link"></a>
+            <button class="submit">JOIN NOW <img src="img/strelka.png" alt="join now"></button>
         </form>
         <div class="registration__article">
             <h3 class="heading_reg">LOYALTY HAS ITS PERKS</h3>

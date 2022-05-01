@@ -101,6 +101,10 @@ ul.breadcrumb li {
   text-decoration: none;
 }
 
+.breadcrumb__link:hover {
+  color: #F16D7F;
+}
+
 .right_link {
   text-decoration: none;
   font-weight: 400;
@@ -274,6 +278,16 @@ summary::after {
           justify-content: center;
 }
 
+.add_to_card_link:hover {
+  background-color: #FF6A6A;
+  color: #ffffff;
+}
+
+.add_img:hover {
+  background-color: #FF6A6A;
+  color: #ffffff;
+}
+
 .add_img {
   padding-right: 22px;
 }
@@ -370,6 +384,10 @@ summary::after {
   line-height: 17px;
   color: #6F6E6E;
   padding-bottom: 11px;
+}
+
+.catalog_menu_list:hover {
+  color: #EF5B70;
 }
 
 .catalog_menu_mini-heading {
@@ -659,7 +677,6 @@ summary::-webkit-details-marker {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #F16D7F;
   padding-top: 20px;
   padding-bottom: 12px;
   padding-left: 33px;
@@ -673,6 +690,10 @@ summary::-webkit-details-marker {
   text-decoration: none;
   padding: 9px;
   padding-left: 54px;
+}
+
+.menu-link:hover {
+  color: red;
 }
 
 .content__heading {
@@ -820,6 +841,13 @@ summary::-webkit-details-marker {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 95px;
+}
+
+.browse_link:hover {
+  background-color: #F16D7F;
+  color: #FFFFFF;
+  -webkit-box-shadow: 4px 2px 18px -1px cadetblue;
+          box-shadow: 4px 2px 18px -1px cadetblue;
 }
 
 .browse_link {
@@ -991,6 +1019,11 @@ summary::-webkit-details-marker {
   border: none;
 }
 
+.button:hover {
+  color: red;
+  background-color: #FFFFFF;
+}
+
 .copyright {
   background-color: #222224;
   height: 79px;
@@ -1098,7 +1131,8 @@ summary::-webkit-details-marker {
   color: #B1B1B1;
 }
 
-.form__link {
+.submit {
+  border: none;
   background-color: #F16D7F;
   font-weight: 400;
   font-size: 14px;
@@ -1143,5 +1177,147 @@ summary::-webkit-details-marker {
   list-style-image: url(img/galochka.png);
   padding-left: 22px;
   margin-left: 32px;
+}
+
+.submit:hover {
+  background-color: #000000;
+}
+
+.card__card_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 96px;
+  width: 652px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.card__card_box:hover {
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
+.busket_list {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+  padding-bottom: 6px;
+}
+
+.card__card_info {
+  margin-left: 31px;
+}
+
+.card__card_heading {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  margin-bottom: 42px;
+  margin-top: 22px;
+}
+
+.number_type {
+  width: 44px;
+  height: 25px;
+  margin-left: 24px;
+  border: 1px solid #EAEAEA;
+  font-size: larger;
+  text-align: center;
+}
+
+.span__price {
+  color: red;
+}
+
+.card_img {
+  height: 100%;
+}
+
+.container__card_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shipping__adress {
+  margin-top: 130px;
+}
+
+.shipping__heading {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  padding-bottom: 20px;
+}
+
+.shipping__info {
+  width: 360px;
+  padding: 12px 15px;
+  border: 1px solid #A4A4A4;
+  margin-bottom: 21px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+}
+
+.GET_A_QUOTE {
+  border: 1px solid #A4A4A4;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  background-color: #ffffff;
+  padding: 10px 14px 10px 14px;
+}
+
+.GET_A_QUOTE:hover {
+  color: #ffffff;
+  background-color: red;
+}
+
+.cancel_button {
+  right: 10px;
+  top: 10px;
+  position: absolute;
+}
+
+.cancel_button:hover {
+  border: 1px solid red;
+}
+
+.card__box_button {
+  padding: 16px 40px;
+  border: 1px solid #A4A4A4;
+  background-color: #ffffff;
+}
+
+.button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 72px;
+  margin-bottom: 128px;
+}
+
+.card__box_button:hover {
+  color: #ffffff;
+  background-color: black;
+}
+
+.checkout_box {
+  width: 360;
+  background-color: #F5F3F3;
 }
 /*# sourceMappingURL=Style.css.map */

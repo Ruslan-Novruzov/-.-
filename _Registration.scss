@@ -45,7 +45,8 @@
     color: #B1B1B1;
 }
 
-.form__link {
+.submit {
+    border: none;
     background-color: #F16D7F;
     font-weight: 400;
     font-size: 14px;
@@ -90,5 +91,8 @@
     list-style-image: url(img/galochka.png);
     padding-left: 22px;
     margin-left: 32px;
+}
 
+.submit:hover {
+    background-color: #000000;
 }
