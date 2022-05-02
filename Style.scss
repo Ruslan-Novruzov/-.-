@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    outline: none;
-}
-
 $site-width:1140px;
 
 body {
@@ -119,7 +113,6 @@ ul.breadcrumb li {
 .section__info {
     margin-top: -55px;
     margin-bottom: 128px;
-    height: 601px;
     background-color: #FFFFFF;
     border: 0.5px solid #E5E5E5;
 }
@@ -234,6 +227,7 @@ summary::after {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.8s ease-out;
 }
 
 .add_to_card_link:hover {
@@ -251,7 +245,8 @@ summary::after {
 }
 
 .add-to-card {
-    margin-top: 50px;
+    margin-top: 48px;
+    margin-bottom: 65px;
     display: flex;
     justify-content: center;
 }
@@ -288,20 +283,23 @@ summary::after {
 }
 
 .FILTER {
+    position: relative;
     width: 360px;
     padding-left: 16px;
 }
 
-.FILTER:hover {
-    background-color: #FFFFFF;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
-}
+
 
 .catalog_menu_box {
     display: none;
     flex-direction: column;
     padding-left: 34px;
-
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    z-index: 1;
+    background-color: #ffffff;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
 
 .catalog_menu_list {
@@ -464,6 +462,11 @@ summary::-webkit-details-marker {
     margin-top: 290px;
 }
 
+.content:hover .content-right {
+    transition: all 1s linear;
+    transform: scale(2);
+}
+
 .fashion {
     color: rgb(229, 93, 48);
 
@@ -487,6 +490,11 @@ summary::-webkit-details-marker {
     position: relative;
 }
 
+.promo__list_bottom:hover .item-text-bottom {
+    transform: scale(1.8);
+    transition: all 1s ease-out;
+}
+
 .item-text {
     position: absolute;
     left: 105px;
@@ -496,6 +504,11 @@ summary::-webkit-details-marker {
     line-height: 19px;
     text-align: center;
     color: #FFFFFF;
+}
+
+.promo__item:hover .item-text {
+    transform: scale(1.8);
+    transition: all 1s ease-out;
 }
 
 .item-text-bottom {
@@ -612,6 +625,7 @@ summary::-webkit-details-marker {
 .card__item {
     width: 360px;
     margin-bottom: 30px;
+    transition: all 1s;
 }
 
 .card__item:hover {
@@ -676,8 +690,13 @@ summary::-webkit-details-marker {
     pointer-events: none;
 }
 
+.buy__link {
+    transition: all 0.5s ease-in-out;
+}
+
 .buy__link:hover {
     box-shadow: 0 0 20px #fff;
+    transform: scale(1.2);
 }
 
 .card__item:hover .buy {
@@ -719,6 +738,7 @@ summary::-webkit-details-marker {
     color: #F26376;
     text-decoration: none;
     padding: 15px 38px;
+    transition: all 0.5s linear;
 }
 
 .pagination {
@@ -859,6 +879,7 @@ summary::-webkit-details-marker {
     border-radius: 0 15px 15px 0;
     margin-left: -5px;
     border: none;
+    transition: all 0.4s linear;
 }
 
 .button:hover {
@@ -893,6 +914,8 @@ summary::-webkit-details-marker {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.2s linear;
+    fill: #000000;
 }
 
 .social_link_box {
@@ -903,11 +926,13 @@ summary::-webkit-details-marker {
 
 .social_link:hover {
     background-color: red;
+    fill: #ffffff;
 }
 
 .social_link:hover .social_img {
     color: #fff;
 }
+
 
 @import "Registration";
 
