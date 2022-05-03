@@ -288,11 +288,18 @@ summary::after {
 
     width: 360px;
     padding-left: 16px;
+    background-color: #ffffff;
 }
 
 .FILTER:hover {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
+
+.FILTER:hover .catalog_menu_box {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .catalog_menu_box {
     display: none;
@@ -346,10 +353,6 @@ summary::after {
 
 }
 
-.FILTER:hover .catalog_menu_box {
-    display: flex;
-    flex-direction: column;
-}
 
 .catalog_menu_mini-heading:hover {
     color: red;
@@ -362,6 +365,7 @@ summary::after {
 
 .right__navig {
     display: flex;
+    margin-left: 16px;
 }
 
 .accardion_list {
@@ -382,8 +386,15 @@ summary::after {
     position: absolute;
 }
 
+details:hover .form_for_checkbox {
+    background-color: white;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    width: 79px;
+}
+
 .lable {
     padding-left: 5px;
+    color: #6F6E6E;
 }
 
 
@@ -406,10 +417,11 @@ summary::after {
 }
 
 .catalog_menu_nav {
-    width: 62%;
     display: flex;
-    justify-content: space-between;
     align-items: baseline;
+    position: absolute;
+    top: 250px;
+    z-index: 1;
 }
 
 .link_list {
@@ -818,9 +830,27 @@ summary::-webkit-details-marker {
 
 }
 
+@keyframes bell {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(40deg);
+    }
+
+    100% {
+        transform: rotate(-40deg);
+    }
+}
+
 .footer__item {
     flex-grow: 1;
     flex-basis: 33.3333%;
+}
+
+.footer__content:hover .footer__item {
+    animation: bell 3.5s ease-in-out infinite;
 }
 
 .footer__heading {
