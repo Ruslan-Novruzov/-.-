@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    width: $site-width;
+    max-width: $site-width;
     margin: 0 auto;
 }
 
@@ -14,6 +14,7 @@ body {
 }
 
 .header {
+    width: 100%;
     position: relative;
     height: 75px;
     display: flex;
@@ -41,6 +42,10 @@ body {
     align-items: center;
     list-style-type: none;
     padding: 25px;
+}
+
+.index__img {
+    height: 100%;
 }
 
 .top__info {
@@ -462,11 +467,8 @@ summary::-webkit-details-marker {
 }
 
 .content-right {
+    align-self: center;
     flex-grow: 1;
-    margin-top: 290px;
-    border-left: 12px solid #F16D7F;
-    height: 105px;
-    padding-left: 16px;
 }
 
 .content:hover .content-right {
@@ -978,3 +980,13 @@ summary::-webkit-details-marker {
 @import "Registration";
 
 @import "Card";
+
+@media (max-width: 768px) {
+    .card__item {
+        width: 48%;
+    }
+
+
+
+
+}
