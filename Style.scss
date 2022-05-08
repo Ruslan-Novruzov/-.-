@@ -1020,6 +1020,7 @@ figcaption {
 
     .footer__content {
         flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .footer__item {

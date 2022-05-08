@@ -1463,7 +1463,6 @@ figcaption {
 }
 
 .checkout_box {
-  width: 360;
   background-color: #F5F3F3;
   margin-top: 58px;
   display: -webkit-box;
@@ -1549,6 +1548,10 @@ figcaption {
   .footer__content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__item {
     width: 44%;
