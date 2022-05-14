@@ -14,7 +14,6 @@ body {
 .header {
   width: 100%;
   position: relative;
-  height: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,12 +37,23 @@ body {
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 12%;
 }
 
 .header__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 16%;
   list-style-type: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -51,8 +61,6 @@ body {
 }
 
 .header__item {
-  width: 44px;
-  height: 38px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,7 +71,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   list-style-type: none;
-  padding: 25px;
+}
+
+.header__item_menu {
+  padding: 12px;
 }
 
 .index__img {
@@ -345,6 +356,11 @@ summary::after {
 .gallery__img {
   display: block;
   width: 100%;
+}
+
+.gallery__img_bottom {
+  width: 100%;
+  display: block;
 }
 
 .gallery__box {
@@ -637,8 +653,8 @@ summary::-webkit-details-marker {
 
 .item-text {
   position: absolute;
-  left: 105px;
-  top: 105px;
+  width: 100%;
+  top: 35%;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -655,13 +671,15 @@ summary::-webkit-details-marker {
 
 .item-text-bottom {
   position: absolute;
-  top: 65px;
-  left: 480px;
+  top: 30%;
   color: #fff;
+  text-align: center;
+  width: 100%;
 }
 
 .text {
-  color: red;
+  width: 100%;
+  color: #F16D7F;
   font-size: 25px;
   line-height: 35px;
 }
@@ -1553,12 +1571,6 @@ figcaption {
   .promo__item {
     width: 32%;
   }
-  .item-text {
-    width: 30%;
-  }
-  .text {
-    width: 20%;
-  }
   .footer__content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1603,7 +1615,7 @@ figcaption {
   }
 }
 
-@media (min-width: 375px) and (max-width: 667px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .content__info_left {
     display: none;
   }
@@ -1618,58 +1630,75 @@ figcaption {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 148px;
-    margin-bottom: 148px;
+    margin-top: 35%;
+    margin-bottom: 35%;
+  }
+  .content__heading {
+    font-size: 165%;
+    padding-bottom: 0;
+  }
+  .content__text {
+    font-size: 85%;
+    margin: 0;
+    margin-bottom: 18%;
   }
   .promo__list_top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 0%;
+  }
+  .header__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 3%;
+  }
+  .header__item_card {
+    display: none;
+  }
+  .header__item_registration {
+    display: none;
   }
   .promo__item {
     width: 100%;
-    padding-bottom: 32px;
+    padding-bottom: 9%;
   }
-  .promo__item:last-child {
-    padding-bottom: 0;
+  .header__item {
+    margin-right: 90%;
+    padding: 0;
   }
-  .header__item:last-of-type {
-    display: none;
+  .promo__list_bottom {
+    margin-bottom: 12%;
+  }
+  .item-text-bottom {
+    top: -24%;
   }
   figcaption {
     width: 130%;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 110%;
+    line-height: 110%;
     text-align: center;
     color: #222224;
   }
   .footer__content {
-    padding-top: 48px;
-    padding-bottom: 30px;
+    padding-top: 14%;
+    padding-bottom: 8%;
   }
   .footer__item {
     width: 90%;
-  }
-  .header__item:nth-child(2) {
-    display: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .promo__list_bottom {
-    margin-bottom: 64px;
   }
   .copy__link {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    margin-top: 43px;
+    margin-top: 12%;
   }
   .copy {
-    margin-top: 40px;
+    margin-top: 11%;
     padding: 0;
   }
 }
