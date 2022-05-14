@@ -50,7 +50,7 @@ body {
 }
 
 .index__img {
-    height: 100%;
+    width: 100%;
 }
 
 .top__info {
@@ -110,10 +110,10 @@ ul.breadcrumb li {
 }
 
 .section {
+    height: 778px;
     display: flex;
     align-items: center;
     background-color: #F7F7F7;
-    height: 777px;
     background-image: url(img/product_img_1.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -278,6 +278,11 @@ summary::after {
 .gallery {
     display: flex;
     justify-content: space-between;
+}
+
+.gallery__img {
+    display: block;
+    width: 100%;
 }
 
 .gallery__box {
@@ -1013,10 +1018,22 @@ figcaption {
 }
 
 @media screen and (max-width: 768px) {
+
     .content__info_left {
         width: 58%;
     }
 
+    .promo__item {
+        width: 32%;
+    }
+
+    .item-text {
+        width: 30%;
+    }
+
+    .text {
+        width: 20%;
+    }
 
     .footer__content {
         flex-wrap: wrap;
@@ -1025,6 +1042,7 @@ figcaption {
 
     .footer__item {
         width: 44%;
+        padding-bottom: 48px;
     }
 
     .footer__bottom_info {
@@ -1048,9 +1066,14 @@ figcaption {
     .footer__picture {
         padding-left: 0;
     }
+
+    .social_link_box {
+        margin-right: 24px;
+    }
 }
 
-@media screen and (max-width: 360px) {
+@media (min-width: 375px) and (max-width:667px) {
+
     .content__info_left {
         display: none;
     }
@@ -1067,8 +1090,59 @@ figcaption {
         flex-direction: column;
     }
 
-    .promo__list_bottom {
-        width: 50%;
+    .promo__item {
+        width: 100%;
+        padding-bottom: 32px;
     }
+
+    .promo__item:last-child {
+        padding-bottom: 0;
+    }
+
+    .header__item:last-of-type {
+        display: none;
+
+    }
+
+    figcaption {
+        width: 130%;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #222224;
+    }
+
+    .footer__content {
+        padding-top: 48px;
+        padding-bottom: 30px;
+    }
+
+
+
+    .footer__item {
+        width: 90%;
+
+    }
+
+    .header__item:nth-child(2) {
+        display: none;
+        display: flex;
+    }
+
+    .promo__list_bottom {
+        margin-bottom: 64px;
+    }
+
+    .copy__link {
+        flex-direction: column-reverse;
+        margin-top: 43px;
+    }
+
+    .copy {
+        margin-top: 40px;
+        padding: 0;
+    }
+
 
 }

@@ -67,7 +67,7 @@ body {
 }
 
 .index__img {
-  height: 100%;
+  width: 100%;
 }
 
 .top__info {
@@ -132,6 +132,7 @@ ul.breadcrumb li {
 }
 
 .section {
+  height: 778px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,7 +140,6 @@ ul.breadcrumb li {
       -ms-flex-align: center;
           align-items: center;
   background-color: #F7F7F7;
-  height: 777px;
   background-image: url(img/product_img_1.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -340,6 +340,11 @@ summary::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.gallery__img {
+  display: block;
+  width: 100%;
 }
 
 .gallery__box {
@@ -1545,6 +1550,15 @@ figcaption {
   .content__info_left {
     width: 58%;
   }
+  .promo__item {
+    width: 32%;
+  }
+  .item-text {
+    width: 30%;
+  }
+  .text {
+    width: 20%;
+  }
   .footer__content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1555,6 +1569,7 @@ figcaption {
   }
   .footer__item {
     width: 44%;
+    padding-bottom: 48px;
   }
   .footer__bottom_info {
     -ms-flex-wrap: wrap;
@@ -1583,9 +1598,12 @@ figcaption {
   .footer__picture {
     padding-left: 0;
   }
+  .social_link_box {
+    margin-right: 24px;
+  }
 }
 
-@media screen and (max-width: 360px) {
+@media (min-width: 375px) and (max-width: 667px) {
   .content__info_left {
     display: none;
   }
@@ -1609,8 +1627,50 @@ figcaption {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .promo__item {
+    width: 100%;
+    padding-bottom: 32px;
+  }
+  .promo__item:last-child {
+    padding-bottom: 0;
+  }
+  .header__item:last-of-type {
+    display: none;
+  }
+  figcaption {
+    width: 130%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #222224;
+  }
+  .footer__content {
+    padding-top: 48px;
+    padding-bottom: 30px;
+  }
+  .footer__item {
+    width: 90%;
+  }
+  .header__item:nth-child(2) {
+    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .promo__list_bottom {
-    width: 50%;
+    margin-bottom: 64px;
+  }
+  .copy__link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 43px;
+  }
+  .copy {
+    margin-top: 40px;
+    padding: 0;
   }
 }
 /*# sourceMappingURL=Style.css.map */
