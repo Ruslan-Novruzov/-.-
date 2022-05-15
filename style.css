@@ -1287,16 +1287,21 @@ figcaption {
 }
 
 .submit {
-  border: none;
-  background-color: #F16D7F;
+  border: 1px solid;
+  background-color: #FFFFFF;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #FFFFFF;
+  color: #F26376;
   text-decoration: none;
   padding: 16px 35px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  fill: #F26376;
+}
+
+.reg__button_detail {
+  padding-left: 18px;
 }
 
 .link__img {
@@ -1337,7 +1342,9 @@ figcaption {
 }
 
 .submit:hover {
-  background-color: #000000;
+  background-color: #F26376;
+  color: #FFFFFF;
+  fill: #FFFFFF;
 }
 
 .card__card_box {
